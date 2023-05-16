@@ -1,9 +1,8 @@
 import 'package:bloc/bloc.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:hexcolor/hexcolor.dart';
+
 import 'package:shopp_app/layout/layouts-Screens/home.dart';
 import 'package:shopp_app/shared/bloc_observer.dart';
 import 'package:shopp_app/shared/local/sharedPref.dart';
@@ -30,7 +29,9 @@ void main() async {
 
 class MyApp extends StatelessWidget {
   late var boaeding = SharedPrefrence.getData(key: 'OnBoarding');
-  // This widget is the root of your application.
+
+  MyApp({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return MultiBlocProvider(
@@ -63,6 +64,7 @@ class MyApp extends StatelessWidget {
         return LoginScreen();
       }
     }
+    return null;
   }
 
 
