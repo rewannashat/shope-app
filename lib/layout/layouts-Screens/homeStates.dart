@@ -38,7 +38,7 @@ class GetChangeFavSuccess extends States {
 
 class GetChangeFavError extends States {}
 
-// getFav
+// getFavvv
 
 // to use check and remove the item in the list in same sec without loading show to user
 // use in post fav and get fav
